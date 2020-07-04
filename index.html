@@ -37,8 +37,9 @@
                     <p>We take inspiration from the World's best cuisines, 
                         and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
+                <div class="col-12 col-sm-6 align-self-center">
+                    <img src="img/logo.png" class="img-fluid offset-sm-1">
+                    <a href="#Reserve"><button class="btn offset-sm-3 col-sm-4 reservetable">Reserve Table</button></a>
                 </div>
             </div>
         </div>
@@ -64,11 +65,16 @@
 
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
-                <h3>This Month's Promotions</h3>
+                <h3 >This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <img src="img/buffet.png" class="d-flex ml-3 img-thumbnail align-self-center order-last" alt="buffet"> 
+                    <div class="media-body col col-sm-10">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2> 
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>                  
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -83,6 +89,40 @@
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
                         <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="card">
+                    <h3 class="card-header text-white">Reserve a Table</h3>
+                    <div class="card-body" id="Reserve">
+                        <form>
+                            <div class="form-group-row">
+                                <label for="Number of Guests" class="col-sm-2 col-form-label"><strong>Number of Guests</strong></label>
+                                <span class="col-sm-6 radio-group">
+                                    <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="1">1 &nbsp;
+                                    <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="1">2 &nbsp;
+                                    <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="3">3 &nbsp;
+                                    <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="4">4 &nbsp;
+                                    <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="5">5 &nbsp;
+                                    <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="6">6
+                                </span> 
+                            </div> <br>
+                            <div class="form-group-row">
+                                <label for="Date and Time" class="col-sm-2 col-form-label"><strong>Date and Time</strong></label>
+                                <span>
+                                    <input onfocus="(this.type='date')" onblur="(this.type='text')" class="js-form-control mydate col-sm-3" placeholder="Date">
+                                    <input onfocus="(this.type='time')" onblur="(this.type='text')" class="js-form-control mydate col-sm-3" placeholder="time">
+                                </span>
+                            </div> <br>
+                            <div class="form-group row">
+                                <div class="col-sm-2 offset-sm-2">
+                                     <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

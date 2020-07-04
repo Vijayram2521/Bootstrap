@@ -37,3 +37,25 @@ body{
 .navbar-dark{
     background-color: #512DA8;
 }
+
+.card-header{
+    background-color: gold;
+}
+
+.myradio{
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+.radio-group{
+    vertical-align: top;
+}
+.mydate{
+    margin-left: 10px;
+    vertical-align: top;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+.reservetable{
+    background-color: goldenrod;
+}
