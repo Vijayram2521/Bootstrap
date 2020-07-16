@@ -27,8 +27,8 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-lg fa-sign-in">&nbsp; Login</span>
+                    <a id="login">
+                        <span class="fa fa-lg fa-sign-in">&nbsp; Login</span> 
                     </a>
                 </span>
             </div>
@@ -73,7 +73,7 @@
     </div>
 
     <div id="reserveModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="contetn">
+        <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Reserve a Table</h4>
@@ -91,7 +91,7 @@
                                 <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="5">5 &nbsp;
                                 <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="6">6
                             </span> 
-                        </div>
+                        </div> <br>
                         <div class="form-group-row">
                             <label for="Section" class="col-sm-2 col-form-label"><strong>Section</strong></label>
                             <span class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -109,7 +109,7 @@
                                 <input onfocus="(this.type='date')" onblur="(this.type='text')" class="js-form-control mydate col-sm-3" placeholder="Date">
                                 <input onfocus="(this.type='time')" onblur="(this.type='text')" class="js-form-control mydate col-sm-3" placeholder="time">
                             </span>
-                        </div>
+                        </div> <br>
                         <div class="form-group row">
                             <span class="col-sm-2 offset-sm-2">
                                 <button type="button" class="btn btn-block ml-auto text-white" data-dismiss="modal" style="background-color:grey;">Cancel</button> 
@@ -136,7 +136,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-sm-3 align-self-center">
-                    <span data-toggle="modal" data-target="#reserveModal">
+                    <span id="reserveButton">
                         <button class="btn nav-link btn-warning btn-block reservetable">Reserve Table</button>
                     </span>
                 </div>
@@ -301,6 +301,20 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+    </script>
+    <script>
+        $(document).ready(function(){
+           $("#login").click(function(){
+               $("#loginModal").modal("show");
+           }) ;
+        }) ;
+    </script>
+    <script>
+        $(document).ready(function(){
+           $("#reserveButton").click(function(){
+               $("#reserveModal").modal("show");
+           }) ;
+        }) ;
     </script>
 </body>
 
