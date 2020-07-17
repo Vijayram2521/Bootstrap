@@ -84,12 +84,12 @@
                         <div class="form-group-row">
                             <label for="Number of Guests" class="col-sm-2 col-form-label"><strong>Number of Guests</strong></label>
                             <span class="col-sm-6 radio-group">
-                                <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="1">1 &nbsp;
-                                <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="1">2 &nbsp;
-                                <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="3">3 &nbsp;
-                                <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="4">4 &nbsp;
-                                <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="5">5 &nbsp;
-                                <input type="radio" id="Number of Guests" class="myradio" name="Number of Guests" value="6">6
+                                <input type="radio" id="One" class="myradio" name="Number of Guests" value="1">1 &nbsp;
+                                <input type="radio" id="Two" class="myradio" name="Number of Guests" value="1">2 &nbsp;
+                                <input type="radio" id="Three" class="myradio" name="Number of Guests" value="3">3 &nbsp;
+                                <input type="radio" id="Four" class="myradio" name="Number of Guests" value="4">4 &nbsp;
+                                <input type="radio" id="Five" class="myradio" name="Number of Guests" value="5">5 &nbsp;
+                                <input type="radio" id="Six" class="myradio" name="Number of Guests" value="6">6
                             </span> 
                         </div> <br>
                         <div class="form-group-row">
@@ -283,39 +283,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script defer src="js/scripts.js" onerror="alert('error!')"></script>
    <!-- <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>-->
-    <script>
-        $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
-    </script>
-    <script>
-        $(document).ready(function(){
-           $("#login").click(function(){
-               $("#loginModal").modal("show");
-           }) ;
-        }) ;
-    </script>
-    <script>
-        $(document).ready(function(){
-           $("#reserveButton").click(function(){
-               $("#reserveModal").modal("show");
-           }) ;
-        }) ;
-    </script>
 </body>
 
 </html>
